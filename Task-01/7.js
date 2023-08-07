@@ -1,5 +1,5 @@
 let input = prompt("Enter A Number: ");
-let number = parseInt(input);
+let number = Number(input);
 
 function Multiplies(x) {
   if (x === 0 || x < 0) {
@@ -13,5 +13,4 @@ function Multiplies(x) {
     }
   }
 }
-
 console.log(Multiplies(number));
