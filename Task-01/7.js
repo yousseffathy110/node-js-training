@@ -1,5 +1,6 @@
 let input = prompt("Enter A Number: ");
 let number = Number(input);
+// we can use parseint() to convert from string to int also
 
 function Multiplies(x) {
   if (x === 0 || x < 0) {
