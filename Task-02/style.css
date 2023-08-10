@@ -1,10 +1,33 @@
 body{
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
-    letter-spacing: 0.7em;
     text-transform: uppercase;
     background: linear-gradient(to right, teal, yellow);
 }
 h1{
-    
+    letter-spacing: 0.5em;
+    font-weight: 500;
+    font-size: 3.3em;
+    margin-top: 80px;
+}
+.random-btn{
+    margin-top: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 4px;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+
+}
+.random-btn:hover{
+    color: white;
+    background-color: transparent;
 }
