@@ -6,4 +6,4 @@ function ReverseString(word){
     }
     return NewWord
 }
-console.log(ReverseString("12345"))
+console.log(ReverseString("yousef"))
