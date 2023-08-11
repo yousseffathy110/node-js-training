@@ -10,7 +10,7 @@ h1{
     margin-top: 80px;
 }
 .random-btn{
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -20,6 +20,7 @@ h1{
     cursor: pointer;
     padding: 4px;
     transition:  0.5s;
+    box-shadow: 0px 0px 8px 0;
 }
 .random-btn:hover{
     color: white;
@@ -42,6 +43,7 @@ h1{
     font-size: 15px;
     font-weight: 400;
     background-color: white;
+    box-shadow: 0px 0px 8px 0;
 }
 .light{
     margin-left: 150px;

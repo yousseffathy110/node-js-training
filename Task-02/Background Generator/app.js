@@ -29,7 +29,23 @@ function LightMode(){
     random.style.color = "#ffffff"
 }
 
+
+function pickcolor() {
+	var color = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' 
+	+ (Math.floor(Math.random() * 256)) + ',' 
+	+ (Math.floor(Math.random() * 256)) + ')';
+  return color;
+}
+
+function getRandomColor() {
+	var rndColor1 = pickcolor();
+	var rndColor2 = pickcolor();
+	body.style.background = "linear-gradient(to right, " + rndColor1 + ", " 
+	+ rndColor2 +")";
+}
+
 input1.addEventListener("input", SetGradiaentBackgroungToBody)
 input2.addEventListener("input", SetGradiaentBackgroungToBody)
 dark.addEventListener("click", DarkMode)
 light.addEventListener("click", LightMode)
+random.addEventListener("click", getRandomColor);
