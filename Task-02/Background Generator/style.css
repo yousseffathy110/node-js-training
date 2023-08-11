@@ -1,7 +1,6 @@
 body{
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
-    text-transform: uppercase;
     background: linear-gradient(to right, teal, yellow);
 }
 h1{
@@ -20,14 +19,53 @@ h1{
     border: 1px solid transparent;
     cursor: pointer;
     padding: 4px;
-    transition: color 0.5s;
-    -webkit-transition: color 0.5s;
-    -moz-transition: color 0.5s;
-    -ms-transition: color 0.5s;
-    -o-transition: color 0.5s;
-
+    transition:  0.5s;
 }
 .random-btn:hover{
     color: white;
     background-color: transparent;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+.light,
+.dark{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: white;
+}
+.light{
+    margin-left: 150px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.dark{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.light:hover,
+.dark:hover{
+    color: white;
+    background-color: transparent;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    cursor: pointer;
 }
