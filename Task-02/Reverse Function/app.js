@@ -1,3 +1,4 @@
+//A Function that takes a string and reverse it!!!
 function ReverseString(word){
     let size = word.length - 1;
     let NewWord = ""
@@ -6,4 +7,6 @@ function ReverseString(word){
     }
     return NewWord
 }
+
+
 console.log(ReverseString("yousef"))
