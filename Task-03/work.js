@@ -78,4 +78,4 @@ function addvalues(...values){
 
     console.log(sum)
 }
-addvalues([1, 2, 3, 4, 5])
+addvalues(1, 2, 3, 4)
