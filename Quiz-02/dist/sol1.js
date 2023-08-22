@@ -2,4 +2,4 @@
 function strlength(x) {
     return x.length;
 }
-console.log(strlength("yousef")); //6
+console.log(strlength("yousef")); //
