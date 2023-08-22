@@ -25,7 +25,7 @@ abstract class Shape {
 }
 
 class Circle extends Shape {
-  protected radius: number = 1.0;
+  private radius: number = 1.0;
 
   constructor(radius: number, color: string, filled: boolean) {
     super(color, filled);
@@ -49,27 +49,39 @@ class Circle extends Shape {
 }
 
 class Rectangle extends Shape {
-    protected width: number = 1.0;
-    protected length: number = 1.0;
+    private width: number = 1.0;
+    private length: number = 1.0;
   
     constructor(width : number , length : number , color: string, filled: boolean) {
       super(color, filled);
       this.width = width;
       this.length=length;
     }
-  
-    // getRadius(): number {
-    //   return this.radius;
-    // }
-    // setRadius(radius: number): void {
-    //   this.radius = radius;
-    // }
-  
-    // getArea(): number {
-    //   return Math.PI * this.radius ** 2;
-    // }
-  
-    // getPerimeter(): number {
-    //   return 2 * Math.PI * this.radius;
-    // }
+
+    getwidth() : number{
+      return this.width
+    }
+    getlength() : number{
+      return this.length
+    }
+    setwidth(width : number ) : void{
+      this.width = width
+    }
+    setlength(length : number) : void{
+      this.length = length
+    }
+    public getArea(): number {
+      return this.width * this.length
+    }
+    public getPerimeter(): number {
+      return (this.width + this.length) * 2
+    }
 }
+
+// class square extends Rectangle{
+//     private side : number
+//     constructor(side : number , color: string, filled: boolean ){
+//       super(color, filled)
+//       this.side = side
+//     }
+// }

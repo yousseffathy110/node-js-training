@@ -46,4 +46,29 @@ class Rectangle extends Shape {
         this.width = width;
         this.length = length;
     }
+    getwidth() {
+        return this.width;
+    }
+    getlength() {
+        return this.length;
+    }
+    setwidth(width) {
+        this.width = width;
+    }
+    setlength(length) {
+        this.length = length;
+    }
+    getArea() {
+        return this.width * this.length;
+    }
+    getPerimeter() {
+        return (this.width + this.length) * 2;
+    }
 }
+// class square extends Rectangle{
+//     private side : number
+//     constructor(side : number , color: string, filled: boolean ){
+//       super(color, filled)
+//       this.side = side
+//     }
+// }
