@@ -10,4 +10,4 @@ function isPrime(x) {
     }
     return true;
 }
-console.log(isPrime(5));
+console.log(isPrime(5)); // true
