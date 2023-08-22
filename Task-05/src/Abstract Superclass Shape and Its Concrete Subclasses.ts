@@ -78,10 +78,36 @@ class Rectangle extends Shape {
     }
 }
 
-// class square extends Rectangle{
-//     private side : number
-//     constructor(side : number , color: string, filled: boolean ){
-//       super(color, filled)
-//       this.side = side
-//     }
-// }
+class Square extends Rectangle {
+    private side: number;
+
+    constructor(side: number, color: string, filled: boolean) {
+        super(side, side, color, filled);
+        this.side = side;
+    }
+    getside() : number {
+      return this.side
+    }
+    setside(side : number) : void{
+      this.side = side
+    }
+    public getArea(): number {
+      return (this.side ** 2)
+    }
+    public getPerimeter(): number {
+      return (this.side) * 4
+    }
+}
+
+let rec = new Rectangle(25 , 25, "red" , true)
+console.log(rec.getArea())
+console.log(rec.getPerimeter())
+
+
+const cir = new Circle(3.4 , "yellow" , false)
+console.log(cir.getArea())
+console.log(cir.getPerimeter())
+
+const SQU = new Square(10 , "teal" , true)
+console.log(SQU.getArea())
+console.log(SQU.getPerimeter())
