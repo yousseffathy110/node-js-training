@@ -1,0 +1,13 @@
+1/ putting the vars and functions declarations before its scope
+
+2/to access the main vars in the super class
+
+3/let and var are much similer but var is old and has scoping isssues and const is a constant declaration which means it can't reassign.
+
+4/the rest parameter "..." allows me to pass an infite number of arguments to a certain fuction
+
+6/px, em, rem, vh and vw
+
+7/font family, font size, font weight and font style
+
+8/we can use the transform traslette or we use the flex box.
