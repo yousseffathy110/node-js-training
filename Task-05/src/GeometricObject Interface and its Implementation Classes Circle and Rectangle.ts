@@ -1,6 +1,6 @@
 interface GeometricObject {
-  getArea() : number;
-  getPerimeter() : number;
+    getArea() : number;
+    getPerimeter() : number;
 }
 
 class circle implements GeometricObject{
@@ -19,7 +19,7 @@ class circle implements GeometricObject{
 class rectangle implements GeometricObject{
     private width : number
     private length : number
-    
+
     constructor(width : number , length : number){
         this.width = width
         this.length  =length
